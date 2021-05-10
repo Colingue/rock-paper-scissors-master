@@ -17,26 +17,76 @@
 		</div>
 		<div class="score">
 			<h2>SCORE</h2>
-			<p class="number">12</p>
+			<p class="number" id="score">12</p>
 		</div>
 	</div>
 
-	<div class="choice">
+	<div class="choice" id="choice">
 		<img class="triangle" src="images/bg-triangle.svg" alt="">
-		<div class="paper">
+		<div class="paper" onclick="showResult('paper')">
 			<div class="circle">
 				<img src="images/icon-paper.svg" alt="">
 			</div>
 		</div>
-		<div class="scissors">
+		<div class="scissors" onclick="showResult('scissors')">
 			<div class="circle">
 				<img src="images/icon-scissors.svg" alt="">
 			</div>
 			
 		</div>
-		<div class="rock">
+		<div class="rock" onclick="showResult('rock')">
 			<div class="circle">
 				<img src="images/icon-rock.svg" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="result hidden" id="result">
+		<div id="left" class="left">
+			<div class="picked">
+				<span>YOU PICKED</span>
+			</div>
+			<div class="paper player-choice">
+				<div class="circle">
+					<img src="images/icon-paper.svg" alt="">
+				</div>
+			</div>
+			<div class="rock player-choice">
+				<div class="circle">
+					<img src="images/icon-rock.svg" alt="">
+				</div>
+			</div>
+			<div class="scissors player-choice">
+				<div class="circle">
+					<img src="images/icon-scissors.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div id="btn-play" class="btn play">
+			<h2>PLAY AGAIN</h2>
+		</div>
+
+		<div class="right" id="right">
+			<div class="picked">
+				<span>THE HOUSE PICKED</span>
+			</div>
+			<div class="without" id="without">
+				<div ></div>
+			</div>
+			<div class="paper home-choice">
+				<div class="circle">
+					<img src="images/icon-paper.svg" alt="">
+				</div>
+			</div>
+			<div class="rock home-choice">
+				<div class="circle">
+					<img src="images/icon-rock.svg" alt="">
+				</div>
+			</div>
+			<div class="scissors home-choice">
+				<div class="circle">
+					<img src="images/icon-scissors.svg" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -54,6 +104,7 @@
 			<img class="" src="images/image-rules.svg" alt="">
 		</div>
 	</div>
+	<script type="text/javascript" src="game.js"></script>
 	<script type="text/javascript" src="open_rules.js"></script>
 </body>
 </html>

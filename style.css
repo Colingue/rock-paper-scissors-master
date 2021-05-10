@@ -13,7 +13,7 @@ body{
     font-family: Barlow Semi Condensed;
     color: white;
     margin: 0;
-    background: linear-gradient(hsl(214, 47%, 23%) ,hsl(237, 49%, 15%));
+    background: linear-gradient(hsl(214, 47%, 25%) ,hsl(237, 49%, 15%));
     height: 100vh;
     overflow: hidden;
 }
@@ -205,4 +205,78 @@ h2{
   .close:after {
     transform: rotate(-45deg);
   }
-  
+
+
+/* RESULTAT */
+
+.picked{
+    text-align: center;
+    top: 50px;
+    width: 300px;
+}
+
+.picked span{
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.left{
+    padding-right: 80px;
+}
+
+.right{
+    padding-left: 80px;
+}
+
+  .result .paper, .result .rock, .result .scissors, .result .without{
+    width: 300px;
+    height: 300px;
+    top: 110px;
+    left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto 50px;
+    
+  }
+
+.result .circle{
+    width: 230px;
+    height: 230px;
+}
+
+.result .circle img{
+    width: 84px;
+}
+
+.result .paper, .result .rock, .result .scissors{
+    position: static;
+    cursor: initial;
+}
+
+.without div{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #1a2448;
+}
+
+.btn.play{
+    background-color: white;
+}
+
+.btn.play h2{
+    color: red;
+}
+
+.hidden{
+    display: none;
+} 
